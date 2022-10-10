@@ -25,7 +25,7 @@ hexaDecimalToDecimal (string n)
       else if (n[i] >= 'A' && n[i] <= 'F')
 	{
 
-	  ans = ans + x * (n[i] - 'A');
+	  ans = ans + x * (n[i] - 'A' + 10);
 
 	}
 
