@@ -12,6 +12,55 @@
     };
 
 ********************************/
+
+/*
+Approach - 1
+
+void sortLinkedList(Node *&head)
+{
+    // Step 1 -> Count
+    int zeroCount = 0;
+    int oneCount = 0;
+    int twoCount = 0;
+    Node *temp = head;
+    while (temp != NULL)
+    {
+        if (temp->data == 0)
+        {
+            zeroCount++;
+        }
+        else if (temp->data == 1)
+        {
+            oneCount++;
+        }
+        else
+        {
+            twoCount++;
+        }
+        temp = temp->next;
+    }
+    // Step 2 -> Fill 0s 1s and 2s
+    temp = head;
+    // Fill zeroes
+    while (zeroCount--)
+    {
+        temp->data = 0;
+        temp = temp->next;
+    }
+    // Fill ones
+    while (oneCount--)
+    {
+        temp->data = 1;
+        temp = temp->next;
+    }
+    // Fill two
+    while (twoCount--)
+    {
+        temp->data = 2;
+        temp = temp->next;
+    }
+}
+*/
 void insertAtTail(Node* &tail, Node* curr ) {
     tail -> next = curr;
     tail = curr;
