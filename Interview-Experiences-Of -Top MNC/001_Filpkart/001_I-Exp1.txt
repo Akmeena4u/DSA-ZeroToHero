@@ -1,0 +1,43 @@
+
+Interview Experience:--
+
+
+
+ ************************************** ----  Round 1 Duration: 90 minutes --Coding Assessment------  ***************************************************** 
+
+Coding test on HackerRank with 3 questionG
+     1-First question was based on permutations and  combinations
+     2 - Second question included a problem on arrays
+     3-  Next question was based on two dimensional arrays and dHnamic programming.
+
+
+
+
+************************************---------Round 2 Duration: 60 minutes - Technical Interview 1----*******************************************************
+
+     1- Three Data Structures and algorithms problem of  varying difficulty
+     2 - First problem was to find the missing number in an  array of n-1 numbers
+     3- Second problem was implementing the nearly sorted algorithm where given an array of n  elements, each element is at most k away from its 
+        target position, you have to print element in sorted order
+     4- Third problem is the famous circular tour problem.
+
+
+
+
+*************************************-------Round 3 Duration: 60 minutes -- Technical Interview 2---********************************************************
+
+    1- Again three questions were asked, but were of a higher difficulty level
+    2-  First question was to find the sum of minimum of all possible (continious) subarray of a given array
+    3-  Second question was based on finding constrained shortest patKh in matrices
+    4-  Third question was to implement LRU cache using  array, stack/queue, doubly linked list, circular linked list and hash maps 
+
+
+
+
+
+********************************-----------Round 4 Duration: 70 minutes -- Hiring Manager Interview----**************************************************
+
+
+    1- Asked a good combination of HR and technical  questions
+    2- Discussions on career goals, strengths, weaknesses,  and personal growth
+    3- In depth discussion on projects done and evaluation  of problem-solving skills
