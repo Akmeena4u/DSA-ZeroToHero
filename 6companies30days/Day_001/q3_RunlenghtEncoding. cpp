@@ -1,0 +1,32 @@
+/*
+
+
+Input:
+str = aaaabbbccc
+Output: a4b3c3
+Explanation: a repeated 4 times
+consecutively b 3 times, c also 3
+times.
+ */
+
+
+string encode(string src)
+{     
+  //Your code here 
+  string ans = "";
+    int n = src.length();
+    int i = 0;
+    while(i < n){
+        char ele = src[i];
+        i++;
+        int cnt = 1;
+        while(i < n && src[i] == ele){
+            cnt++;
+            i++;
+        }
+        ans += ele;
+        ans += to_string(cnt);
+    }
+    return ans;
+}     
+ 
