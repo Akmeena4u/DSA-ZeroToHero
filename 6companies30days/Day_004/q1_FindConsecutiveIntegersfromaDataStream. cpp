@@ -1,0 +1,102 @@
+/*
+
+
+
+Approch - Sliding Window approch
+
+Pushes the given number num into the queue q.Updates the frequency map m for the number.If the size of the queue reaches or exceeds K, it checks for consecutive occurrences.If the queue size exceeds K, it removes the oldest number from the queue and updates its frequency in the map.Checks if there's only one distinct number in the queue, and its frequency matches temp. If so, it returns true indicating consecutive occurrences; otherwise, it returns false.
+*/
+
+
+
+ 
+
+class DataStream
+{
+public:
+    map<int,int> m;      // Map to store frequency of numbers
+    queue<int> q;        // Queue to store the last K numbers
+    int K;               // Number of consecutive occurrences to check
+    int temp;            // A specific value to track
+
+    // Constructor to initialize K and temp
+    DataStream(int value, int k)
+    {
+        K = k;
+        temp = value;
+    }
+
+    // Method to check for consecutive occurrences
+    bool consec(int num)
+    {
+        q.push(num);     // Add number to the queue
+        m[num]++;        // Update frequency map for the number
+        
+        // If queue size reaches or exceeds K
+        if (q.size() >= K)
+        {
+            // If queue size exceeds K, remove the oldest number and update map
+            if (q.size() > K)
+            {
+                m[q.front()]--;             // Decrement frequency of oldest number
+                if (m[q.front()] == 0)      // If frequency becomes 0, remove from map
+                {
+                    m.erase(q.front());
+                }
+                q.pop();                    // Remove the oldest number from queue
+            }
+            
+            // Check if there's only one distinct number in the queue and its frequency matches temp
+            if (m.size() == 1 && m[temp] > 0)
+            {
+                return true;                // Return true for consecutive occurrences
+            }
+            else
+            {
+                return false;               // Return false otherwise
+            }
+        }
+        else
+        {
+            return false;                   // Return false if queue size is less than K
+        }   
+    }
+};
+
+
+//Approch 2- Tc-O(1)
+
+
+class DataStream {
+    int val;      // Specific value to check for consecutive occurrences
+    int n;        // Number of consecutive occurrences to check
+    int count;    // Counter for current consecutive occurrences
+    
+public:
+    // Constructor to initialize val, n, and count
+    DataStream(int value, int k) {
+        val = value;
+        n = k;
+        count = 0;
+    }
+    
+    // Method to check for consecutive occurrences of val
+    bool consec(int num) {
+        // If the current number matches val, increment the count
+        if (num == val)
+            count++;
+        else {
+            // If the current number doesn't match val, reset the count and return false
+            count = 0;
+            return false;
+        }
+        
+        // If count reaches n (i.e., n consecutive occurrences of val are found)
+        if (count == n) {
+            count = n - 1;  // Reset the count to n-1 for further checks
+            return true;    // Return true for consecutive occurrences
+        }
+        
+        return false;      // Return false otherwise
+    }
+};
