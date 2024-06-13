@@ -1,14 +1,14 @@
-**Pedovan Sequence Problem Explanation and Solution:**
+**Padovan Sequence Problem Explanation and Solution:**
 
 ### Overview:
-" This is a straightforward problem where the answer is almost entirely given in the problem statement itself. The task is to find the n-th element of the Pedovan sequence. the code will be  
+" This is a straightforward problem where the answer is almost entirely given in the problem statement itself. The task is to find the n-th element of the Padovan sequence. the code will be  
   almost same as the code of to find  nth Fibbonacci number but game is over how to manage lagrge number , and thats why there is need to use mudulus operation .
 
   Dynamic programming is a method used to solve problems by breaking them down into simpler subproblems and storing the results of these subproblems to avoid redundant computations.
   In this code, we use an dp array to store the values of the Padovan sequence as we compute them.
 
 ### Key Points:
-1. **Pedovan Sequence Definition:**
+1. **Padovan Sequence Definition:**
    - The Pedovain sequence is similar to the Fibonacci sequence.
    - Each element is the sum of the previous two and the one before the previous two elements.
    - Formula: P(n) = P(n-2) + P(n-3) .
@@ -18,7 +18,7 @@
    - P(0) = 1, P(1) = 1, P(2) = 1.
 
 3. **Objective:**
-   - Given a number n, find the  n-th element of the Pedovain sequence.
+   - Given a number n, find the  n-th element of the Padovan sequence.
 
 4. **Example:**
    - If n = 3, the value is the sum of P(1) and P(0), both of which are 1.
@@ -117,6 +117,6 @@ The optimized solution reduces the space complexity by using only a few variable
 - **Time Complexity:** O(n) because the loop runs from 3 to n.
 - **Space Complexity:** O(1)since only a constant amount of space is used to store variables a, b, c, and d .
 
-This optimized solution efficiently computes the n-th element of the Pedovain sequence while minimizing space usage.
+This optimized solution efficiently computes the n-th element of the Padovan sequence while minimizing space usage.
 
 
