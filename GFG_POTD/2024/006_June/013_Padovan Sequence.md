@@ -83,31 +83,21 @@ The optimized solution reduces the space complexity by using only a few variable
 
 ### Code in Java:
 ```cpp
-class Solution {
-    int m = 1000000007;
-    
-    public int padovanSequence(int n) {
-        // If n is 0, 1, or 2, return 1 as the first three values are always 1
-        if(n <= 2)
+ int padovanSequence(int n) {
+        if (n <= 2)
             return 1;
-        
-        // Initialize the first three values of the sequence
+
         int a = 1, b = 1, c = 1, d = 0;
-        
-        // Loop to calculate the sequence values from 3 to n
-        for(int i = 3; i <= n; i++) {
-            // Calculate the current value using the previous two and one before them
-            d = (a % m + b % m) % m;
-            // Update the previous values for the next iteration
+
+        for (int i = 3; i <= n; i++) {
+            d = (a + b) % MOD;
             a = b;
             b = c;
             c = d;
         }
-        
-        // Return the n-th value of the sequence
+
         return d;
     }
-}
 ```
 
 ### Explanation:
