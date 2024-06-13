@@ -1,14 +1,14 @@
-**Pedovain Sequence Problem Explanation and Solution:**
+**Pedovan Sequence Problem Explanation and Solution:**
 
 ### Overview:
-" This is a straightforward problem where the answer is almost entirely given in the problem statement itself. The task is to find the n-th element of the Pedovain sequence. the code will be  
+" This is a straightforward problem where the answer is almost entirely given in the problem statement itself. The task is to find the n-th element of the Pedovan sequence. the code will be  
   almost same as the code of to find  nth Fibbonacci number but game is over how to manage lagrge number , and thats why there is need to use mudulus operation .
 
   Dynamic programming is a method used to solve problems by breaking them down into simpler subproblems and storing the results of these subproblems to avoid redundant computations.
   In this code, we use an dp array to store the values of the Padovan sequence as we compute them.
 
 ### Key Points:
-1. **Pedovain Sequence Definition:**
+1. **Pedovan Sequence Definition:**
    - The Pedovain sequence is similar to the Fibonacci sequence.
    - Each element is the sum of the previous two and the one before the previous two elements.
    - Formula: P(n) = P(n-2) + P(n-3) .
