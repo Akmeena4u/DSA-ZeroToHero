@@ -204,16 +204,16 @@ using namespace std;
 
 // Function to find all prime numbers up to 'n'
 vector<int> findAllPrimes(int n) {
-    // Initialize with 1 (assuming all numbers are prime initially)
+      // Initialize with 1 (assuming all numbers are prime initially)
     vector<int> prime(n + 1, 1);
     
     // 0 and 1 are not prime
     prime[0] = prime[1] = 0; 
     
     // Apply Sieve of Eratosthenes
-    for (int i = 2; i <= sqrt(n); ++i) {
-        if (prime[i] == 1) {
-            for (int j = i * i; j <= n; j += i) {
+    for (int i = 2; i <= sqrt(n); ++i) {  //runs loop for sqrt(n) only because after that there will be similarity only 
+        if (prime[i] == 1) {// means if i is not prime then mark all multiples as a prime
+            for (int j = i * i; j <= n; j += i) {  // started from i*i as a optimization  , otherwise in brute force it was started from 2*i
                 // Mark multiples of prime numbers as not prime
                 prime[j] = 0; 
             }
