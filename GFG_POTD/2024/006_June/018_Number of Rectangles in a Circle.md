@@ -6,7 +6,7 @@ You are given a circular sheet with a radius r. The task is to find the total nu
 - If r = 1, there is only one rectangle of dimensions `1* 1` that fits within the circle.
 - If r = 2, there are 8 possible rectangles: `(1*1), (1*2), (1*3), (2*1), (2*2), (2*3), (3*1), (3*2)`.
 
-### Intution
+### Intuition
 The intuition behind the solution lies in understanding how rectangles can fit within a circle and how to systematically count them.
 
 1. **Bounding Box**: First, realize that the largest rectangle that can fit within a circle is a square whose diagonal is equal to the diameter of the circle. This square will be the bounding box for all possible rectangles within the circle.
