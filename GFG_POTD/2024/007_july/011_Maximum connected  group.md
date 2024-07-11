@@ -34,6 +34,8 @@ By changing cell (3,2) from '0' to '1', you can form a connected group of 7 '1's
 [1, 0, 1]
 [1, 1, 1]
 ```
+### Intuition
+The intuition behind this solution revolves around using Depth-First Search (DFS) to explore and count connected components of '1's in the grid, then leveraging this information to determine the maximum size of connected groups achievable by changing one '0' to '1'.
 
 ### Solution Approach:
 1. **DFS for Connected Components:** We use Depth-First Search (DFS) to find all connected components of '1's in the grid. Each component is assigned a unique index starting from 2.
