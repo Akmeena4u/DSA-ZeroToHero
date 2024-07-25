@@ -36,8 +36,21 @@ This guide covers the time and space complexities of common algorithms used in c
 
 ---
 
+### **Searching**
+
+![image](https://github.com/user-attachments/assets/fcd08b05-19dc-49f1-92fd-103bd7db98ca)
+
+---
+
+### **Graphs**
+
+![image](https://github.com/user-attachments/assets/af11a800-08aa-448b-af40-4328bc6e6586)
+
 
 
 ### **Conclusion**
 
 This guide serves as a quick reference for the time and space complexities of common algorithms and data structures, aiding in technical interview preparation and improving algorithmic understanding.
+
+Credit1(https://www.hackerearth.com/practice/notes/big-o-cheatsheet-series-data-structures-and-algorithms-with-thier-complexities-1/)
+Credit2(https://www.bigocheatsheet.com/)
