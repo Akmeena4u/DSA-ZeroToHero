@@ -1,13 +1,16 @@
-In Data Structures and Algorithms (DSA), a heap is a specialized complete binary tree-based data structure that satisfies the heap property. The heap property varies depending on the type of heap:
+
+
+# Heap Data Structures in Data Structures and Algorithms (DSA)
+
+A heap is a specialized complete binary tree-based data structure that satisfies the heap property. The heap property varies depending on the type of heap:
 
 ### Types of Heaps
+
 1. **Max Heap**:
    - In a max heap, for any given node `i`, the value of `i` is greater than or equal to the values of its children. This ensures that the largest element is always at the root.
    
 2. **Min Heap**:
    - In a min heap, for any given node `i`, the value of `i` is less than or equal to the values of its children. This ensures that the smallest element is always at the root.
-
-3. ![image](https://github.com/user-attachments/assets/b6f8a83d-f3c2-406c-96a3-8e95898c35a4)
 
 ---
 
@@ -24,7 +27,7 @@ In Data Structures and Algorithms (DSA), a heap is a specialized complete binary
 
 ---
 
-### Implementations in different languages and Complexity analysis 
+### Implementations in Different Languages and Complexity Analysis 
 
 **Table 1: Implementations**
 
@@ -46,12 +49,11 @@ In Data Structures and Algorithms (DSA), a heap is a specialized complete binary
 
 ---
 
-
-
 ### Implementation Details
+
 Heaps are often implemented using arrays rather than pointers, taking advantage of the complete binary tree structure. Parent and child nodes can be accessed with indices:
-- **0 based indexing** if the parent index=i then leftchild=2i+1 , rightchild index= 2i+2
-- **1 based indexing** if the parent index=i then leftchild index= 2i , rightchild index=2i+1
+- **0-based indexing**: if the parent index = `i`, then left child index = `2i+1`, right child index = `2i+2`.
+- **1-based indexing**: if the parent index = `i`, then left child index = `2i`, right child index = `2i+1`.
 
 ---
 
@@ -232,7 +234,6 @@ int main() {
 
 ##### Using Custom Comparator
 You can also define a custom comparator for more complex priority rules.
-
 ```cpp
 #include <iostream>
 #include <queue>
