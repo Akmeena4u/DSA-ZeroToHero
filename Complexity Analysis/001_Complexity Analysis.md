@@ -103,8 +103,3 @@ Asymptotic notations provide a way to describe the performance of an algorithm a
 Complexity analysis is a fundamental aspect of algorithm design and evaluation. By understanding and applying complexity analysis, one can design efficient algorithms that perform well across different input sizes.
 
 ---
-
-### **Graphical Representations**
-- Graphs can be used to visualize the growth of functions described by the different asymptotic notations.
-
-This guide provides a comprehensive overview of complexity analysis, essential for understanding and designing efficient algorithms.
