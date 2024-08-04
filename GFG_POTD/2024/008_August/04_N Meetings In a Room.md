@@ -86,12 +86,12 @@ public:
 
 ### Complexity Analysis
 1. **Time Complexity:**
-   - Sorting the meetings takes \(O(n \log n)\).
-   - Iterating through the meetings to select the maximum number of non-overlapping meetings takes \(O(n)\).
-   - Hence, the overall time complexity is \(O(n \log n)\).
+   - Sorting the meetings takes `O(nlog n)`.
+   - Iterating through the meetings to select the maximum number of non-overlapping meetings takes O(n).
+   - Hence, the overall time complexity is `O(nlog n)`.
 
 2. **Space Complexity:**
-   - The space complexity is \(O(n)\) for storing the meetings.
+   - The space complexity is `O(n)` for storing the meetings.
 
 
 By following this approach, you can efficiently determine the maximum number of non-overlapping meetings that can be scheduled in the given meeting room. This method ensures optimal use of the room's time by always selecting the meeting that leaves the maximum room for future meetings.
