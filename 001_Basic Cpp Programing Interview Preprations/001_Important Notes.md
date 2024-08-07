@@ -215,5 +215,125 @@
 
 ---
 
+### What are the different data types present in C++?
+> 
+> #### Data Types in C++
+> 
+> C++ offers a rich set of data types to handle various kinds of data. These data types can be broadly classified into three categories: Primitive Data Types, Derived Data Types, and User-Defined Data Types.
+> 
+> 
+> 
+> #### 1. Primitive Data Types
+> 
+> Primitive data types are the basic building blocks provided by C++.
+> 
+> - **Integer Types:**
+>   - **`int`**: Standard integer type.
+>   - **`short int` or `short`**: Short integer type.
+>   - **`long int` or `long`**: Long integer type.
+>   - **`long long int` or `long long`**: Extended long integer type.
+>   - **`unsigned int`**: Unsigned integer type (cannot represent negative values).
+>   - **`unsigned short int`**: Unsigned short integer type.
+>   - **`unsigned long int`**: Unsigned long integer type.
+>   - **`unsigned long long int`**: Unsigned extended long integer type.
+> 
+> - **Character Types:**
+>   - **`char`**: Represents a single character (usually 1 byte).
+>   - **`unsigned char`**: Unsigned character type.
+>   - **`signed char`**: Signed character type.
+>   - **`wchar_t`**: Wide character type for representing larger character sets.
+> 
+> - **Floating-Point Types:**
+>   - **`float`**: Single-precision floating-point type.
+>   - **`double`**: Double-precision floating-point type.
+>   - **`long double`**: Extended-precision floating-point type.
+> 
+> - **Boolean Type:**
+>   - **`bool`**: Represents boolean values `true` and `false`.
+> 
+> - **Void Type:**
+>   - **`void`**: Represents the absence of type. Commonly used for functions that do not return a value.
+> 
+> 
+> 
+> #### 2. Derived Data Types
+> 
+> Derived data types are built from primitive data types.
+> 
+> - **Array:**
+>   - Collection of elements of the same type.
+>   - Example: `int arr[10];` // Array of 10 integers.
+> 
+> - **Pointer:**
+>   - Holds the memory address of another variable.
+>   - Example: `int *ptr;` // Pointer to an integer.
+> 
+> - **Reference:**
+>   - An alias for another variable.
+>   - Example: `int &ref = x;` // Reference to the variable `x`.
+> 
+> - **Function:**
+>   - A block of code that performs a specific task.
+>   - Example: `int func(int a);` // Function returning an integer and taking an integer parameter.
+> 
+> 
+> 
+> #### 3. User-Defined Data Types
+> 
+> User-defined data types are defined by the programmer to handle complex data.
+> 
+> - **Class:**
+>   - Defines a blueprint for objects. Contains data members and member functions.
+>   - Example:
+>     ```cpp
+>     class MyClass {
+>         int data; // Data member
+>         public:
+>             void show() { // Member function
+>                 cout << "Data: " << data << endl;
+>             }
+>     };
+>     ```
+> 
+> - **Structure (struct):**
+>   - Similar to a class but with public members by default.
+>   - Example:
+>     ```cpp
+>     struct MyStruct {
+>         int data; // Data member
+>     };
+>     ```
+> 
+> - **Union:**
+>   - Similar to a structure but with all members sharing the same memory location.
+>   - Example:
+>     ```cpp
+>     union MyUnion {
+>         int intData;
+>         float floatData;
+>     };
+>     ```
+> 
+> - **Enumeration (enum):**
+>   - A set of named integer constants.
+>   - Example:
+>     ```cpp
+>     enum Color { RED, GREEN, BLUE };
+>     ```
+> 
+> - **Typedef:**
+>   - Provides a new name for an existing type.
+>   - Example:
+>     ```cpp
+>     typedef unsigned long ulong;
+>     ```
+> 
+> 
+> 
+> #### Summary
+> 
+> C++ provides a versatile set of data types to cater to a wide range of programming needs. Understanding these types and their usage is fundamental for efficient and effective C++ programming.
+> 
 
+---
 
