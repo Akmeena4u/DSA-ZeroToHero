@@ -1,7 +1,4 @@
-![image](https://github.com/user-attachments/assets/409737fa-7e4c-41bf-9e78-0d6af516f8fe)
 
-
-### Interview Question
 
 ### Describe the origin of C++ and its evolution over the years. What were the key milestones in its development also provide examples of real-world applications of C++ and list some companies that actively use C++ in their technology stack.?
 
@@ -10,7 +7,18 @@
 - C++ originated in the early 1980s as an enhancement to the C programming language. Bjarne Stroustrup began working on "C with Classes" at Bell Labs in 1979, aiming to add object-oriented features to C. The language was renamed C++ in 1983, with the "++" symbol signifying the increment operator in C, hinting at an improved version of C.
 
 - Key milestones in the development of C++ include:
--![image](https://github.com/user-attachments/assets/e5d8641a-043c-4593-9378-3f6c03c1a0bc)
+-
+- Here's the summarized table of the history of various C++ versions:
+
+| Version                      | Release Date     | Major Changes                                                                                             |
+|------------------------------|------------------|-----------------------------------------------------------------------------------------------------------|
+| C++98 (ISO/IEC 14882:1998)   | October 1998     | The first version                                                                                         |
+| C++03 (ISO/IEC 14882:2003)   | February 2003    | Introduction of value initialization                                                                      |
+| C++11                        | August 2011      | Introduction of Lambda Expressions, Delegating Constructors, Uniform Initialization Syntax, nullptr, Automatic Type Deduction and decltype, Rvalue References, etc. |
+| C++14                        | August 2014      | Introduction of polymorphic lambdas, digit separators, generalized lambda capture, variable templates, binary integer literals, quoted strings, etc. |
+| C++17                        | December 2017    | Introduction of fold expressions, hexadecimal floating point literals, a u8 character literal, selection statements with initializer, inline variables, etc. |
+| C++20                        | March 2020       | This update extends C++ with the facilities to inspect program entities such as variables, enumerations, classes and their members, lambdas and their captures, etc. |
+| C++23                        | Future Release   | The next major revision of the C++ standard                                                               |  
 
 
 
