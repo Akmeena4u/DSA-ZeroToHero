@@ -23,13 +23,6 @@ This problem involves circular linked list manipulation. The key idea is to:
 2. Traverse `k` nodes to find the new head.
 3. Break the circular link to form the new rotated list.
 
-**Intuition:**
-
-To rotate a linked list, the idea is to:
-1. Identify the end of the list.
-2. Connect the end to the head to form a circular linked list.
-3. Find the new head position by traversing `k` nodes from the current head.
-4. Break the circular link to get the rotated list.
 
 **Algorithm:**
 
