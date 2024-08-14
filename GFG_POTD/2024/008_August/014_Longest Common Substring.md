@@ -183,9 +183,7 @@ We need to find the length of the longest common substring between `str1` and `s
        0  A  C  D  G  H  R
      0 0  0  0  0  0  0  0
    A 0 1  0  0  0  0  0  0
-   B 0 0  0  0  0  0  0
-
-  0
+   B 0 0  0  0  0  0  0  0
    C 0 0  1  0  0  0  0  0
    D 0 0  0  2  0  0  0  0
    G 0 0  0  0  3  0  0  0
@@ -211,7 +209,7 @@ We need to find the length of the longest common substring between `str1` and `s
    G 0 0  0  0  3  0  0  0
    H 0 0  0  0  0  4  0  0
    ```
-```
+``
 ### Final Result:
 - The length of the longest common substring is `maxi = 4`, corresponding to the substring `"CDGH"`.
 
