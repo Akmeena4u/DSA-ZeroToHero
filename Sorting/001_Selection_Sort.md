@@ -34,11 +34,11 @@ void selectionSort(vector<int>& arr, int n)
 
 #### Time Complexity:
 
-- **Best Case**: \(O(n^2)\)
-- **Average Case**: \(O(n^2)\)
-- **Worst Case**: \(O(n^2)\)
+- **Best Case**: `O(n^2)`
+- **Average Case**: `O(n^2)`
+- **Worst Case**: `O(n^2)`
 
-**Space Complexity**: \(O(1)\) (In-place sorting algorithm)
+**Space Complexity**: `(O(1)` (In-place sorting algorithm)
 
 #### Characteristics:
 
@@ -73,11 +73,6 @@ void selectionSort(vector<int>& arr, int n)
 6. **Describe a real-world scenario where Selection Sort might be used.**
    - **Answer**: Selection Sort could be used in situations where memory is very limited and the dataset is small, such as sorting a list of items in an embedded system.
 
-### Facts About Selection Sort:
-
-- **Selection Sort's inefficiency** makes it unsuitable for large datasets, but it is still valuable for teaching and learning sorting concepts.
-- **Not adaptive**: The algorithm does not take advantage of existing order in the data.
-- **Simple implementation**: The simplicity of Selection Sort makes it easy to implement and understand.
 
 ### Related Problems Solvable by Selection Sort:
 
