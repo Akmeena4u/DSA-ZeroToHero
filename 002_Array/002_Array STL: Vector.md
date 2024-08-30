@@ -106,12 +106,54 @@
 - **Capacity Management**:
   - `std::vector` automatically manages its capacity but can be controlled using `reserve()` and `shrink_to_fit()`.
 
-#### **6. Use Cases in Interviews**
+#### **6. 2D Vectors**
+
+- **Definition**: A 2D vector is a vector of vectors, allowing you to represent a matrix or table-like structure.
+
+- **Initialization**:
+  ```cpp
+  std::vector<std::vector<int>> matrix(3, std::vector<int>(4)); // 3 rows, 4 columns, default-initialized to 0
+  std::vector<std::vector<int>> matrix{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; // 2D vector with specific values
+  ```
+
+- **Accessing Elements**:
+  ```cpp
+  int value = matrix[1][2]; // Access element at row 1, column 2
+  ```
+
+- **Modifying Elements**:
+  ```cpp
+  matrix[0][1] = 10; // Set element at row 0, column 1 to 10
+  ```
+
+- **Getting Dimensions**:
+  ```cpp
+  size_t numRows = matrix.size();          // Number of rows
+  size_t numCols = matrix[0].size();       // Number of columns (assuming all rows have the same number of columns)
+  ```
+
+- **Iterating Over 2D Vectors**:
+  ```cpp
+  for (size_t i = 0; i < matrix.size(); ++i) {
+      for (size_t j = 0; j < matrix[i].size(); ++j) {
+          std::cout << matrix[i][j] << " "; // Access elements in row-major order
+      }
+      std::cout << std::endl;
+  }
+  ```
+
+- **Resizing 2D Vectors**:
+  ```cpp
+  matrix.resize(4, std::vector<int>(5, 0)); // Resize to 4 rows and 5 columns, initialized to 0
+  ```
+
+#### **7. Use Cases in Interviews**
 
 - **Dynamic Arrays**: When the size of the array is not known in advance or changes during runtime.
+- **2D Matrices**: For problems involving grid-based data or matrix operations.
 - **Algorithmic Problems**: Frequently used in problems involving sorting, searching, and manipulation of sequences.
 
-#### **7. Practical Examples**
+#### **8. Practical Examples**
 
 - **Reverse a Vector**:
   ```cpp
@@ -131,7 +173,7 @@
 
 ---
 
-#### **8. Array v/s Vector**
+#### **9. Array v/s Vector**
 
 Here's a comparative table highlighting the key differences between `std::vector` and raw arrays in C++:
 
@@ -149,16 +191,4 @@ Here's a comparative table highlighting the key differences between `std::vector
 | **Bounds Checking**          | `at()` method with bounds checking; `[]` operator without | No built-in bounds checking                    |
 | **Copy/Move Semantics**      | Supports copy and move operations                         | Requires manual copy and move                  |
 | **Iterator Support**         | Full support (begin(), end(), rbegin(), rend(), etc.)   | No iterators available                         |
-| **Default Initialization**   | Elements default-initialized (or use provided value)     | Elements may be uninitialized (depends on type)|
-| **Memory Overhead**          | May have some overhead due to dynamic resizing           | No overhead beyond the fixed size              |
-| **Use Case**                 | When dynamic resizing and automatic memory management are needed | When size is fixed and performance is critical |
-
-### Key Points:
-
-- **`std::vector`**: Ideal for scenarios where the size of the container can change dynamically or when automatic memory management is beneficial. It provides more flexibility and functionality but comes with some overhead due to its dynamic nature.
-
-- **Raw Arrays**: Best used when the size of the array is known at compile-time and does not change. They offer a simpler, lower-overhead option but lack the flexibility and safety features provided by `std::vector`.
-
-Understanding these differences will help you choose the appropriate data structure for your specific needs and performance requirements during coding interviews and real-world applications.
-
-This guide covers the essential aspects of `std::vector` and how to use it effectively for coding interviews. Understanding these operations and methods will help you handle various problems involving dynamic arrays in C++.
+| **Default Initialization**   | Elements default-initialized
