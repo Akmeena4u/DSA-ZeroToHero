@@ -243,9 +243,7 @@ int main() {
 **Explanation:**
 The two-pointer technique is used when you need to find a pair of elements that satisfy a condition. It involves using two pointers, usually starting at the ends of a sorted array, and moving them towards each other based on certain conditions.
 
-**Problem:** Find the container
-
- with the most water.
+**Problem:** Find the container with the most water.
 
 **Code Example:**
 
@@ -294,9 +292,7 @@ These examples and explanations should provide a clear understanding of each pat
 
 ---
 
-Sure! Let’s delve into the explanations and code examples for the problems of merging intervals and handling circular arrays. 
 
----
 
 ### 6. Merging Intervals
 
