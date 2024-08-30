@@ -199,15 +199,15 @@ Multidimensional arrays are arrays of arrays. The most common is the two-dimensi
 #### **7. Time Complexity and Space Complexity**
 
 - **Time Complexity:**
-  - | Operation           | Big-O    | Note |
-|---------------------|----------|------|
-| **Access**          | `O(1)`   | Direct access using an index. |
-| **Search**          | `O(n)`   | Linear search. |
-| **Search (sorted)** | `O(log(n))` | Binary search on a sorted array. |
-| **Insert**          | `O(n)`   | Elements need to be shifted. |
-| **Insert (end)**    | `O(1)`   | Special case with no shifting required. |
-| **Remove**          | `O(n)`   | Elements need to be shifted. |
-| **Remove (end)**    | `O(1)`   | Special case with no shifting required. |
+  | Operation           | Big-O    | Note |
+  |---------------------|----------|------|
+  | **Access**          | `O(1)`   | Direct access using an index. |
+  | **Search**          | `O(n)`   | Linear search. |
+  | **Search (sorted)** | `O(log(n))` | Binary search on a sorted array. |
+  | **Insert**          | `O(n)`   | Elements need to be shifted. |
+  | **Insert (end)**    | `O(1)`   | Special case with no shifting required. |
+  | **Remove**          | `O(n)`   | Elements need to be shifted. |
+  | **Remove (end)**    | `O(1)`   | Special case with no shifting required. |
 
 - **Space Complexity:**
   - **Static Arrays:** O(n), where `n` is the number of elements in the array.
