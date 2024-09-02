@@ -1,7 +1,7 @@
 
 ### Problem Statement
 
-Given a square grid of size \( N \times N \), each cell contains an integer cost representing the cost to traverse through that cell. The task is to find a path from the top-left cell to the bottom-right cell with the minimum total cost. You can move up, down, left, or right from any cell.
+Given a square grid of size N*N, each cell contains an integer cost representing the cost to traverse through that cell. The task is to find a path from the top-left cell to the bottom-right cell with the minimum total cost. You can move up, down, left, or right from any cell.
 
 ### Approach
 
